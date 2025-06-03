@@ -17,4 +17,65 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
+  .hover\:pause-animation:hover {
+    animation-play-state: paused;
+  }
+
+  /* Team slider specific styles */
+  #teamSlider {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    display: flex;
+  }
+  
+  #teamSlider > div {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive card widths for smooth sliding */
+  @media (max-width: 767px) {
+    #teamSlider > div {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #teamSlider > div {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #teamSlider > div {
+      width: 33.333%;
+    }
+  }
+  
+  /* YouTube Playlist styles */
+  .playlist-item.active {
+    background-color: #050506 !important;
+    border-color: rgba(165, 138, 94, 0.3) !important;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 } 

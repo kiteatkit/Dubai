@@ -1,9 +1,10 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/news/page": "app/news/page.js",
   "/contact/page": "app/contact/page.js",
-  "/page": "app/page.js",
-  "/listings/page": "app/listings/page.js",
   "/listings/[id]/page": "app/listings/[id]/page.js",
+  "/login/page": "app/login/page.js",
+  "/listings/page": "app/listings/page.js",
+  "/news/page": "app/news/page.js",
+  "/page": "app/page.js",
   "/team/page": "app/team/page.js"
 }
